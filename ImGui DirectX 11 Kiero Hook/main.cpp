@@ -176,9 +176,6 @@ void renderloop()
 
 			vars::currentplayeridx = i; // Set the current player index in our sdk
 
-			if (LocalPlayer == NULL)
-				continue;
-
 			auto localplayerPosition = LocalPlayer->GetTransform()->GetPosition();
 
 			auto playerPosition = PlayerList[vars::currentplayeridx]->GetTransform()->GetPosition();

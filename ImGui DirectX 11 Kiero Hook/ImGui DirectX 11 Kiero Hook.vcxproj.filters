@@ -343,9 +343,6 @@
     <ClInclude Include="..\Il2cpp_Resolver\Unity\Structures\System_String.hpp">
       <Filter>Header Files\IL2\Unity\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PaternScan.hpp">
       <Filter>Header Files\Game</Filter>
     </ClInclude>
