@@ -2,7 +2,7 @@
 
 Base For Il2CPP Unity Game Hacking
 
-Tutorial Video Using This base: https://www.youtube.com/@DEV_KC
+Tutorial Video Using This base: https://www.youtube.com/@IdolTheDev
 
 Credits
 SneakyEvil For The Resolver - https://github.com/sneakyevil/IL2CPP_Resolver &
