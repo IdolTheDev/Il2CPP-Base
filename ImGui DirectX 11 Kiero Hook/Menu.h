@@ -248,7 +248,7 @@ void DrawMenu()
 	ImGuiTheme2();
 	// DrawInspector();
 	static int page = 0;
-	if (ImGui::Begin("[  DEVWARE  ]", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings))
+	if (ImGui::Begin("[  IL2CPP  ]", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings))
 	{
 		ImGui::SetWindowPos(ImVec2(500, 500), ImGuiCond_Once);
 		ImGui::SetWindowSize(ImVec2(375, 400), ImGuiCond_Once);
