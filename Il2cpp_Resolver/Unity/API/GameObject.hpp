@@ -15,6 +15,7 @@ namespace Unity
 		void* m_pGetTransform = nullptr;
 		void* m_pSetActive = nullptr;
 		void* m_pSetLayer = nullptr;
+		void* m_pSetTag = nullptr;
 	};
 	extern SGameObjectFunctions GameObjectFunctions;
 
@@ -95,6 +96,10 @@ namespace Unity
 		void SetLayer(unsigned int m_uLayer)
 		{
 			reinterpret_cast<void(UNITY_CALLING_CONVENTION)(void*, unsigned int)>(GameObjectFunctions.m_pSetLayer)(this, m_uLayer);
+		}
+
+		void SetTag(const char* m_pTag) {
+			reinterpret_cast<void* (UNITY_CALLING_CONVENTION)(void*, System_String*)>(GameObjectFunctions.m_pSetTag)(this, IL2CPP::String::New(m_pTag));
 		}
 	};
 
