@@ -7,6 +7,7 @@ namespace Unity
 	{
 		void* m_pDestroy = nullptr;
 		void* m_pFindObjectsOfType = nullptr;
+		void* m_pDontDestroyOnLoad = nullptr;
 		void* m_pGetName = nullptr;
 	};
 	extern SObjectFunctions ObjectFunctions;
@@ -17,6 +18,10 @@ namespace Unity
 		void Destroy(float fTimeDelay = 0.f)
 		{
 			reinterpret_cast<void(UNITY_CALLING_CONVENTION)(void*, float)>(ObjectFunctions.m_pDestroy)(this, fTimeDelay);
+		}
+
+		void DontDestroyOnLoad() {
+			reinterpret_cast<void(UNITY_CALLING_CONVENTION)(void*)>(ObjectFunctions.m_pDontDestroyOnLoad)(this);
 		}
 
 		System_String* GetName()

@@ -50,7 +50,7 @@
 #define UNITY_OBJECT_CLASS											"UnityEngine.Object"
 #define UNITY_OBJECT_DESTROY										UNITY_OBJECT_CLASS"::Destroy"
 #define UNITY_OBJECT_FINDOBJECTSOFTYPE								UNITY_OBJECT_CLASS"::FindObjectsOfType"
-
+#define UNITY_OBJECT_DONTDESTROYONLOAD								UNITY_OBJECT_CLASS"::DontDestroyOnLoad"
 #define UNITY_OBJECT_GETNAME										UNITY_OBJECT_CLASS"::GetName"
 
 // Rigidbody
