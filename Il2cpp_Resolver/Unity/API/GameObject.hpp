@@ -16,6 +16,7 @@ namespace Unity
 		void* m_pSetActive = nullptr;
 		void* m_pSetLayer = nullptr;
 		void* m_pSetTag = nullptr;
+		void* m_pGetTag = nullptr;
 	};
 	extern SGameObjectFunctions GameObjectFunctions;
 
@@ -83,6 +84,11 @@ namespace Unity
 		unsigned int GetLayer()
 		{
 			return reinterpret_cast<unsigned int(UNITY_CALLING_CONVENTION)(void*)>(GameObjectFunctions.m_pGetLayer)(this);
+		}
+
+		System_String* GetTag()
+		{
+			return reinterpret_cast<System_String * (UNITY_CALLING_CONVENTION)(void*)>(GameObjectFunctions.m_pGetTag)(this);
 		}
 
 		/*

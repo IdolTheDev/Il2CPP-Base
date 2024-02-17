@@ -32,6 +32,7 @@
 #define UNITY_GAMEOBJECT_GETACTIVE 									UNITY_GAMEOBJECT_CLASS"::get_active"
 #define UNITY_GAMEOBJECT_GETLAYER 									UNITY_GAMEOBJECT_CLASS"::get_layer"
 #define UNITY_GAMEOBJECT_GETTRANSFORM 								UNITY_GAMEOBJECT_CLASS"::get_transform"
+#define UNITY_GAMEOBJECT_GETTAG 									UNITY_GAMEOBJECT_CLASS"::get_tag"
 
 #define UNITY_GAMEOBJECT_SETACTIVE 									UNITY_GAMEOBJECT_CLASS"::set_active"
 #define UNITY_GAMEOBJECT_SETLAYER 									UNITY_GAMEOBJECT_CLASS"::set_layer"
@@ -52,12 +53,18 @@
 #define UNITY_OBJECT_FINDOBJECTSOFTYPE								UNITY_OBJECT_CLASS"::FindObjectsOfType"
 #define UNITY_OBJECT_DONTDESTROYONLOAD								UNITY_OBJECT_CLASS"::DontDestroyOnLoad"
 #define UNITY_OBJECT_GETNAME										UNITY_OBJECT_CLASS"::GetName"
+#define UNITY_OBJECT_SETNAME										UNITY_OBJECT_CLASS"::SetName"
 
 // Rigidbody
 #define UNITY_RIGIDBODY_CLASS										"UnityEngine.Rigidbody"
 #define UNITY_RIGIDBODY_GETDETECTCOLLISIONS                         UNITY_RIGIDBODY_CLASS"::get_detectCollisions"
 #define UNITY_RIGIDBODY_GETVELOCITY                                 UNITY_RIGIDBODY_CLASS"::get_velocity_Injected"
+#define UNITY_RIGIDBODY_GETFREEZEROTATION                           UNITY_RIGIDBODY_CLASS"::get_freezeRotation"
+#define UNITY_RIGIDBODY_GETISKINEMATIC                              UNITY_RIGIDBODY_CLASS"::get_isKinematic"
 
+
+#define UNITY_RIGIDBODY_SETISKINEMATIC                              UNITY_RIGIDBODY_CLASS"::set_isKinematic"
+#define UNITY_RIGIDBODY_SETFREEZEROTATION                           UNITY_RIGIDBODY_CLASS"::set_freezeRotation"
 #define UNITY_RIGIDBODY_SETDETECTCOLLISIONS                         UNITY_RIGIDBODY_CLASS"::set_detectCollisions"
 #define UNITY_RIGIDBODY_SETVELOCITY                                 UNITY_RIGIDBODY_CLASS"::set_velocity_Injected"
 

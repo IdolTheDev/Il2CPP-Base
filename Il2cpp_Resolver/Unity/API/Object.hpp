@@ -9,6 +9,7 @@ namespace Unity
 		void* m_pFindObjectsOfType = nullptr;
 		void* m_pDontDestroyOnLoad = nullptr;
 		void* m_pGetName = nullptr;
+		void* m_pSetName = nullptr;
 	};
 	extern SObjectFunctions ObjectFunctions;
 
@@ -27,6 +28,11 @@ namespace Unity
 		System_String* GetName()
 		{
 			return reinterpret_cast<System_String*(UNITY_CALLING_CONVENTION)(void*)>(ObjectFunctions.m_pGetName)(this);
+		}
+
+		void SetName(const char* m_pName) {
+
+			reinterpret_cast<void(UNITY_CALLING_CONVENTION)(void*, System_String*)>(ObjectFunctions.m_pSetName)(this, IL2CPP::String::New(m_pName));
 		}
 	};
 
